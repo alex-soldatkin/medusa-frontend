@@ -44,6 +44,14 @@ const nextConfig = withStoreConfig({
       {
         protocol: "http",  
         hostname: "cdn11.bigcommerce.com", 
+      }, 
+      {
+        protocol: "https",
+        hostname: "chauvinparis.com",
+      },
+      {
+        protocol: "http",  
+        hostname: "chauvinparis.com", 
       }
     ],
   },
