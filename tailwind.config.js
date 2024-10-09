@@ -89,10 +89,10 @@ module.exports = {
         kalnia: ["Kalnia", "serif"],
         sans: [
           "Inter",
+          "Roboto",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
-          "Roboto",
           "Helvetica Neue",
           "Ubuntu",
           "sans-serif",

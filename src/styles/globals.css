@@ -74,6 +74,15 @@
   .text-ui-fg-muted {
     @apply text-palm_green-600 text-opacity-40 !important;
   }
+  .border-ui-border-base {
+    @apply border-palm_green-100 !important;
+  }
+  .border-ui-border-interactive {
+    @apply border-palm_green-800 !important;
+  }
+  .bg-ui-bg-subtle {
+    @apply bg-palm_green-100 !important;
+  }
 }
 
 @layer components {
