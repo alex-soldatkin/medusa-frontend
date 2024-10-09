@@ -12,7 +12,7 @@ import CountrySelect from "../country-select"
 
 const SideMenuItems = {
   Главная: "/",
-  Магазин: "/store",
+  Каталог: "/store",
   Поиск: "/search",
   Аккаунт: "/account",
   Корзина: "/cart",
@@ -88,7 +88,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                         /> */}
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Flaurista. All rights reserved.
+                        © {new Date().getFullYear()} Flaurista. Все права защи.
                       </Text>
                     </div>
                   </div>
