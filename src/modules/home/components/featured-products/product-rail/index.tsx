@@ -22,7 +22,7 @@ export default function ProductRail({
     <div className="py-12 small:py-24">
       <div className="flex justify-between mb-8 px-4 small:px-0">
         <Text className="ml-4 txt-xlarge">{collection.title}</Text>
-        <InteractiveLink href={`/collections/${collection.handle}`} className="mr-4">
+        <InteractiveLink href={`/collections/${collection.handle}`}>
           Все букеты в категории
         </InteractiveLink>
       </div>
