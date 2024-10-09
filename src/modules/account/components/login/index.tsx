@@ -41,7 +41,7 @@ const Login = ({ setCurrentView }: Props) => {
           />
         </div>
         <ErrorMessage error={message} data-testid="login-error-message" />
-        <SubmitButton data-testid="sign-in-button" className="w-full mt-6 w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100">Войти</SubmitButton>
+        <SubmitButton data-testid="sign-in-button" className="w-full mt-6 w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200">Войти</SubmitButton>
       </form>
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
         Все еще не с нами?{" "}

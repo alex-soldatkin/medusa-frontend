@@ -57,7 +57,7 @@ const AccountInfo = ({
         <div>
           <Button
             variant="secondary"
-            className="w-[100px] min-h-[25px] relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100"
+            className="w-[100px] min-h-[25px] relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200"
             onClick={handleToggle}
             type={state ? "reset" : "button"}
             data-testid="edit-button"
@@ -122,7 +122,7 @@ const AccountInfo = ({
             <div className="flex items-center justify-end mt-2">
               <Button
                 isLoading={pending}
-                className="w-full small:max-w-[140px] items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100"
+                className="w-full small:max-w-[140px] items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200"
                 type="submit"
                 data-testid="save-button"
               >

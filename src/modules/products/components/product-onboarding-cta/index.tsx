@@ -18,7 +18,7 @@ const ProductOnboardingCta = () => {
           Сейчас Вы можете продолжить настройку как администратор магазина.
         </Text>
         <a href="http://localhost:7001/a/orders?onboarding_step=create_order_nextjs">
-          <Button className="w-full w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100">Продожить как администратор</Button>
+          <Button className="w-full w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200">Продожить как администратор</Button>
         </a>
       </div>
     </Container>

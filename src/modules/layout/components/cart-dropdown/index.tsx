@@ -194,7 +194,7 @@ const CartDropdown = ({
                   </div>
                   <LocalizedClientLink href="/cart" passHref>
                     <Button
-                      className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-200"
+                      className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-200 hover:bg-opacity-60 active:bg-palm_green-300"
                       size="large"
                       data-testid="go-to-cart-button"
                     >
@@ -215,7 +215,7 @@ const CartDropdown = ({
                     <LocalizedClientLink href="/store">
                       <>
                         <span className="sr-only">Все букеты</span>
-                        <Button onClick={close} className="relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-200 hover:bg-opacity-60">
+                        <Button onClick={close} className="relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-200 hover:bg-opacity-60 active:bg-palm_green-300">
                           Найти тот самый букет
                         </Button>
                       </>

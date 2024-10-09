@@ -76,7 +76,7 @@ const GiftCardPaymentButton = () => {
       onClick={handleOrder}
       isLoading={submitting}
       data-testid="submit-order-button"
-      className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100"
+      className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200"
     >
       {/* Place order */}
       Сделать заказ
@@ -175,7 +175,7 @@ const StripePaymentButton = ({
         size="large"
         isLoading={submitting}
         data-testid={dataTestId}
-        className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100"
+        className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200"
       >
         {/* Place order */}
         Сделать заказ
@@ -278,7 +278,7 @@ const ManualTestPaymentButton = ({ notReady }: { notReady: boolean }) => {
         onClick={handlePayment}
         size="large"
         data-testid="submit-order-button"
-        className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100"
+        className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200"
       >
         {/* Place order */}
         Сделать заказ

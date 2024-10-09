@@ -24,7 +24,7 @@ const Summary = ({ cart }: SummaryProps) => {
       <Divider />
       <CartTotals data={cart} />
       <LocalizedClientLink href={"/checkout?step=" + cart.checkout_step} data-testid="checkout-button">
-        <Button className="w-full h-10 w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100">
+        <Button className="w-full h-10 w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200">
           {/* add fawesome money bill icon */}
           <FontAwesomeIcon icon={faMoneyBill} className="mr-2" />
           Оформить заказ

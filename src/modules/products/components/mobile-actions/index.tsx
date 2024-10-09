@@ -111,7 +111,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({
                 className="w-full"
                 data-testid="mobile-actions-button"
               >
-                <div className="flex items-center justify-between w-full w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100">
+                <div className="flex items-center justify-between w-full w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200">
                   <span>
                     {variant
                       ? Object.values(options).join(" / ")
@@ -123,7 +123,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({
               <Button
                 onClick={handleAddToCart}
                 disabled={!inStock || !variant}
-                className="w-full border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100"
+                className="w-full border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200"
                 isLoading={isAdding}
                 data-testid="mobile-cart-button"
               >

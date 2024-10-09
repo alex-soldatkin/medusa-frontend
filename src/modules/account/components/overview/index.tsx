@@ -75,7 +75,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                                 Сумма
                               </span>
                               <span data-testid="order-created-date">
-                                {new Date(order.created_at).toDateString()}
+                                {new Date(order.created_at).toLocaleDateString()}
                               </span>
                               <span data-testid="order-id" data-value={order.display_id}>#{order.display_id}</span>
                               <span data-testid="order-amount">

@@ -117,7 +117,7 @@ const AddAddress = ({ region }: { region: Region }) => {
                 type="reset"
                 variant="secondary"
                 onClick={close}
-                className="h-10 w-full items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100"
+                className="h-10 w-full items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200"
                 data-testid="cancel-button"
               >
                 Отменить

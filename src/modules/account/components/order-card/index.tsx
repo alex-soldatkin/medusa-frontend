@@ -28,7 +28,7 @@ const OrderCard = ({ order }: OrderCardProps) => {
       </div>
       <div className="flex items-center divide-x divide-gray-200 text-small-regular text-ui-fg-base">
         <span className="pr-2" data-testid="order-created-at">
-          {new Date(order.created_at).toDateString()}
+          {new Date(order.created_at).toLocaleDateString()}
         </span>
         <span className="px-2" data-testid="order-amount">
           {formatAmount({
@@ -75,7 +75,7 @@ const OrderCard = ({ order }: OrderCardProps) => {
       <div className="flex justify-end">
         <LocalizedClientLink href={`/account/orders/details/${order.id}`}>
           <Button data-testid="order-details-link" variant="secondary"
-          className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100">
+          className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200">
             {/* See details */}
             Больше информации
           </Button>

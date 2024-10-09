@@ -33,8 +33,8 @@ const CartTotals: React.FC<CartTotalsProps> = ({ data }) => {
       <div className="flex flex-col gap-y-2 txt-medium text-ui-fg-subtle ">
         <div className="flex items-center justify-between">
           <span className="flex gap-x-1 items-center">
-            Subtotal
-            <Tooltip content="Cart total excluding shipping and taxes.">
+            Сумма заказа{" "}
+            <Tooltip content="Сумма заказа, исключая налоги и доставку.">
               <InformationCircleSolid color="var(--fg-muted)" />
             </Tooltip>
           </span>
@@ -44,7 +44,7 @@ const CartTotals: React.FC<CartTotalsProps> = ({ data }) => {
         </div>
         {!!discount_total && (
           <div className="flex items-center justify-between">
-            <span>Discount</span>
+            <span>Скидка</span>
             <span
               className="text-ui-fg-interactive"
               data-testid="cart-discount"
@@ -61,7 +61,7 @@ const CartTotals: React.FC<CartTotalsProps> = ({ data }) => {
           </span>
         </div>
         <div className="flex justify-between">
-          <span className="flex gap-x-1 items-center ">Taxes</span>
+          <span className="flex gap-x-1 items-center ">Налоги</span>
           <span data-testid="cart-taxes" data-value={tax_total || 0}>
             {getAmount(tax_total)}
           </span>

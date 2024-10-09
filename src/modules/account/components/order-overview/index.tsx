@@ -34,7 +34,7 @@ const OrderOverview = ({ orders }: { orders: Order[] }) => {
       </p>
       <div className="mt-4">
         <LocalizedClientLink href="/" passHref>
-          <Button data-testid="continue-shopping-button" className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100">
+          <Button data-testid="continue-shopping-button" className="w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200">
             {/* Continue shopping */}
             Продолжить покупки
           </Button>

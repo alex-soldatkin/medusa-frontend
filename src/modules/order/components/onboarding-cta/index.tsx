@@ -14,7 +14,7 @@ const OnboardingCta = ({ orderId }: { orderId: string }) => {
           You can now complete setting up your store in the admin.
         </Text>
         <Button
-          className="w-fit w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100"
+          className="w-fit w-full relative flex items-center justify-center border border-palm_green-900 border-solid bg-transparent text-palm_green-800 shadow-none hover:bg-palm_green-100 active:bg-palm_green-200"
           size="xlarge"
           onClick={() => resetOnboardingState(orderId)}
         >
