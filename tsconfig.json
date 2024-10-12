@@ -17,11 +17,19 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
-    "paths":{
-      "@lib/*": ["src/lib/*"],
-      "@modules/*": ["src/modules/*"], 
-      "@app/*":["src/app/*"],
-      "types/*":["src/types/*"]
+    "paths": {
+      "@lib/*": [
+        "src/lib/*"
+      ],
+      "@modules/*": [
+        "src/modules/*"
+      ],
+      "@app/*": [
+        "src/app/*"
+      ],
+      "types/*": [
+        "src/types/*"
+      ]
     },
     "plugins": [
       {

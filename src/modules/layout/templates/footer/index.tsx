@@ -15,9 +15,9 @@ export default async function Footer() {
   return (
     <footer className="border-t border-ui-border-base w-full">
       <div className="content-container flex gap-x-96 flex-col  w-full">
-        <div className="flex flex-col items-center content-evenly gap-y-8 xsmall:flex-row justify-between py-40 gap-x-46 xsmall:items-start xsmall:mx-12">
+        <div className="p-12 flex flex-col items-start items-stretch content-evenly gap-y-8 xsmall:flex-row py-40">
           {/* Column 1 */}
-          <div className="ml-12 mr-12 w-full ">
+          <div className="content-center w-full ">
             {/* Flaurista */}
             <LocalizedClientLink
               href="/"
@@ -178,7 +178,7 @@ export default async function Footer() {
             </div>
           </div>
           {/* Column 2 Categories & Collections */}
-          <div className="flex flex-col md:flex-row justify-between w-full text-small-regular md:gap-x-16">
+          <div className="flex flex-col justify-between md:flex-row w-full text-small-regular md:gap-x-16">
             {/* Categories */}
             {product_categories && product_categories?.length > 0 && (
               <div className="flex flex-col gap-y-2">
@@ -239,30 +239,30 @@ export default async function Footer() {
             )}
             {/* Collections */}
             {collections && collections.length > 0 && (
-              <div className="mr-12 ml-12 flex flex-col gap-y-2 mt-8 md:mt-0">
+                <div className="flex flex-col gap-y-2 mt-8 md:mt-0 xsmall:ml-0 xsmall:items-center">
                 <span className="txt-small-plus txt-ui-fg-base">
                   Коллекции
                 </span>
                 <ul
                   className={clx(
-                    "grid gap-2 text-ui-fg-subtle txt-small",
+                  "grid gap-2 text-ui-fg-subtle txt-small",
                   )}
                 >
                   {collections
-                    .sort((a, b) => b.title.length - a.title.length)
-                    // .slice(0, 6)
-                    .map((c) => (
-                      <li key={c.id}>
-                        <LocalizedClientLink
-                          className="hover:text-ui-fg-base"
-                          href={`/collections/${c.handle}`}
-                        >
-                          {c.title}
-                        </LocalizedClientLink>
-                      </li>
-                    ))}
+                  .sort((a, b) => b.title.length - a.title.length)
+                  // .slice(0, 6)
+                  .map((c) => (
+                    <li key={c.id}>
+                    <LocalizedClientLink
+                      className="hover:text-ui-fg-base"
+                      href={`/collections/${c.handle}`}
+                    >
+                      {c.title}
+                    </LocalizedClientLink>
+                    </li>
+                  ))}
                 </ul>
-              </div>
+                </div>
             )}
           </div>
 
