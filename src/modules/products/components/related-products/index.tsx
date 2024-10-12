@@ -67,18 +67,25 @@ export default async function RelatedProducts({
           Похожие букеты
         </span>
         <p className="text-2xl-regular text-ui-fg-base max-w-lg">
-          Мы думаем, что Вам понравятся<br />эти букеты: 
-          
+          Мы думаем, что Вам понравятся<br />эти букеты:
         </p>
       </div>
 
-      <ul className="grid grid-cols-2 small:grid-cols-3 medium:grid-cols-4 gap-x-6 gap-y-8">
-        {productPreviews.map((productPreview) => (
-          <li key={productPreview.id}>
-            <ProductPreview region={region} productPreview={productPreview} />
-          </li>
-        ))}
-      </ul>
+
+      <div className="overflow-x-auto no-scrollbar w-full -ml-6">
+  <ul className="flex snap-x snap-mandatory space-x-6 px-4 w-full m-0">
+    {productPreviews.map((productPreview, index) => (
+      <li
+        key={productPreview.id}
+        className="snap-start flex-shrink-0 w-64"
+      >
+        <ProductPreview region={region} productPreview={productPreview} />
+      </li>
+    ))}
+  </ul>
+</div>
+
+
     </div>
   )
 }
