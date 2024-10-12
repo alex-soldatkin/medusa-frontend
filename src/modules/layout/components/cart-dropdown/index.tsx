@@ -82,16 +82,16 @@ const CartDropdown = ({
     >
       <Popover className="relative h-full">
         <Popover.Button className="h-full">
-          <LocalizedClientLink
+            <LocalizedClientLink
             className="hover:text-ui-fg-base text-palm_green-900"
             href="/cart"
             data-testid="nav-cart-link"
-          >
+            >
             <FontAwesomeIcon icon={faShoppingCart} className="mr-2 text-sm text-palm_green-800" />
             {/* <CartIcon className="mr-2 text-sm text-palm_green-800"/> */}
-            {`Корзина (${totalItems})`}
-
-          </LocalizedClientLink>
+            <span className="hidden small:inline">{`Корзина (${totalItems})`}</span>
+            <span className="small:hidden">({totalItems})</span>
+            </LocalizedClientLink>
         </Popover.Button>
         <Transition
           show={cartDropdownOpen}
