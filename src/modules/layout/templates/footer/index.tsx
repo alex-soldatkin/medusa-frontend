@@ -239,7 +239,7 @@ export default async function Footer() {
             )}
             {/* Collections */}
             {collections && collections.length > 0 && (
-              <div className="mr-12 ml-12 flex flex-col gap-y-2 mt-8 md:mt-0 md:ml-12">
+              <div className="mr-12 ml-12 flex flex-col gap-y-2 mt-8 md:mt-0">
                 <span className="txt-small-plus txt-ui-fg-base">
                   Коллекции
                 </span>
