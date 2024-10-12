@@ -15,7 +15,7 @@ export default async function Footer() {
   return (
     <footer className="border-t border-ui-border-base w-full">
       <div className="content-container flex gap-x-96 flex-col  w-full">
-        <div className="flex flex-col items-start content-evenly gap-y-8 xsmall:flex-row  justify-between py-40 gap-x-46">
+        <div className="flex flex-col items-center content-evenly gap-y-8 xsmall:flex-row justify-between py-40 gap-x-46 xsmall:items-start xsmall:mx-12">
           {/* Column 1 */}
           <div className="ml-12 mr-12 w-full ">
             {/* Flaurista */}
