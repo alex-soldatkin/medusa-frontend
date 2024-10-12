@@ -88,7 +88,7 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
                         /> */}
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Flaurista. Все права защи.
+                        © {new Date().getFullYear()} Flaurista. Все права защищены.
                       </Text>
                     </div>
                   </div>

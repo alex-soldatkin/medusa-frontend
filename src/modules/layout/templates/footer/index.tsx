@@ -5,7 +5,7 @@ import { getCategoriesList, getCollectionsList } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import MedusaCTA from "@modules/layout/components/medusa-cta"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTelegram, faVk, faWhatsapp, faInstagram} from '@fortawesome/free-brands-svg-icons';
+import { faTelegram, faVk, faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faAddressBook, faAddressCard, faRoute } from '@fortawesome/free-solid-svg-icons';
 
 export default async function Footer() {
@@ -14,87 +14,173 @@ export default async function Footer() {
 
   return (
     <footer className="border-t border-ui-border-base w-full">
-      <div className="content-container flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
-          <div>
+      <div className="content-container flex gap-x-96 flex-col  w-full">
+        <div className="flex flex-col items-start content-evenly gap-y-8 xsmall:flex-row  justify-between py-40 gap-x-46">
+          {/* Column 1 */}
+          <div className="ml-12 mr-12 w-full ">
+            {/* Flaurista */}
             <LocalizedClientLink
               href="/"
               className="mr-2 text-kalnia txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base"
             >
               Flaurista
             </LocalizedClientLink>
-
+            {/* About us */}
             <div className="mt-2 flex flex-col gap-y-2">
               {/* <span className="txt-small-plus txt-ui-fg-base">Flaurista</span> */}
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
-              <li className="flex items-center">
-                <a
-                href="/about"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-ui-fg-base flex items-center"
-                >
-                <table className="invisible-table">
-                  <tbody>
-                  <tr>
-                    <td className="pr-1.5">
-                    <FontAwesomeIcon icon={faAddressCard} className="text-lg" />
-                    </td>
-                    <td>
-                    <span>О нас</span>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-                </a>
-              </li>
-              <li className="flex items-center">
-                <a
-                href="https://yandex.ru/maps?ll=37.37865699999999691272023483%2C55.83916099999999715919329901&mode=routes&rtext=~55.83916099999999715919329901%2C37.37865699999999691272023483&z=17"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-ui-fg-base flex items-center"
-                >
-                <table className="invisible-table">
-                  <tbody>
-                  <tr>
-                    <td className="pr-2">
-                    <FontAwesomeIcon icon={faRoute} className="text-lg" />
-                    </td>
-                    <td>
-                    <span>Как добраться</span>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-                </a>
-              </li>
-              <li className="flex items-center">
-                <a
-                href="/contact"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-ui-fg-base flex items-center"
-                >
-                <table className="invisible-table">
-                  <tbody>
-                  <tr>
-                    <td className="pr-2">
-                    <FontAwesomeIcon icon={faAddressBook} className="text-lg" />
-                    </td>
-                    <td>
-                    <span>Контакты и адреса</span>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-                </a>
-              </li>
+                <li className="flex items-center">
+                  <a
+                    href="/about"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base flex items-center"
+                  >
+                    <table className="invisible-table">
+                      <tbody>
+                        <tr>
+                          <td className="pr-1.5">
+                            <FontAwesomeIcon icon={faAddressCard} className="text-lg" />
+                          </td>
+                          <td>
+                            <span>О нас</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </a>
+                </li>
+                <li className="flex items-center">
+                  <a
+                    href="https://yandex.ru/maps?ll=37.37865699999999691272023483%2C55.83916099999999715919329901&mode=routes&rtext=~55.83916099999999715919329901%2C37.37865699999999691272023483&z=17"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base flex items-center"
+                  >
+                    <table className="invisible-table">
+                      <tbody>
+                        <tr>
+                          <td className="pr-2">
+                            <FontAwesomeIcon icon={faRoute} className="text-lg" />
+                          </td>
+                          <td>
+                            <span>Как добраться</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </a>
+                </li>
+                <li className="flex items-center">
+                  <a
+                    href="/contact"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base flex items-center"
+                  >
+                    <table className="invisible-table">
+                      <tbody>
+                        <tr>
+                          <td className="pr-2">
+                            <FontAwesomeIcon icon={faAddressBook} className="text-lg" />
+                          </td>
+                          <td>
+                            <span>Контакты и адреса</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </a>
+                </li>
               </ul>
             </div>
+            {/* Socials */}
+            <div className="mt-12 flex flex-col gap-y-2 ml-auto ">
+              <span className="txt-small-plus txt-ui-fg-base">Подпишитесь на нас</span>
+              <div className="grid grid-cols-1 gap-y-1.5 text-ui-fg-subtle txt-small">
+                <a
+                  href="https://vk.me/flaurista"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-ui-fg-base flex items-center"
+                >
+                  <table className="invisible-table">
+                    <tbody>
+                      <tr>
+                        <td className="pr-2">
+                          <FontAwesomeIcon icon={faVk} className="text-lg" />
+                        </td>
+                        <td>
+                          <span>VK</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </a>
+                <a
+                  href="https://t.me/flaurista"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-ui-fg-base flex items-center"
+                >
+                  <table className="invisible-table">
+                    <tbody>
+                      <tr>
+                        <td className="pr-1.5">
+                          <FontAwesomeIcon icon={faTelegram} className="text-lg" />
+                        </td>
+                        <td>
+                          <span>Telegram</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </a>
+                <a
+                  href="https://www.instagram.com/flaurista_/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-ui-fg-base flex items-center"
+                >
+                  <table className="invisible-table">
+                    <tbody>
+                      <tr>
+                        <td className="pr-2">
+                          <FontAwesomeIcon icon={faInstagram} className="text-lg" />
+                        </td>
+                        <td>
+                          <span>Instagram</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </a>
+                <a
+                  href="https://wa.me/79309455185"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-ui-fg-base flex items-center"
+                >
+                  <table className="invisible-table">
+                    <tbody>
+                      <tr>
+                        <td className="pr-2">
+                          <FontAwesomeIcon icon={faWhatsapp} className="text-lg" />
+                        </td>
+                        <td>
+                          <span>WhatsApp</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
-            {/* {product_categories && product_categories?.length > 0 && (
+          {/* Column 2 Categories & Collections */}
+          <div className="flex flex-col md:flex-row justify-between w-full text-small-regular md:gap-x-16">
+            {/* Categories */}
+            {product_categories && product_categories?.length > 0 && (
               <div className="flex flex-col gap-y-2">
                 <span className="txt-small-plus txt-ui-fg-base">
                   Категории
@@ -106,11 +192,13 @@ export default async function Footer() {
                     }
 
                     const children =
-                      c.category_children?.map((child) => ({
-                        name: child.name,
-                        handle: child.handle,
-                        id: child.id,
-                      })) || null
+                      c.category_children
+                        ?.map((child) => ({
+                          name: child.name,
+                          handle: child.handle,
+                          id: child.id,
+                        }))
+                        .sort((a, b) => b.name.length - a.name.length) || null
 
                     return (
                       <li
@@ -148,115 +236,36 @@ export default async function Footer() {
                   })}
                 </ul>
               </div>
-            )} */}
+            )}
+            {/* Collections */}
             {collections && collections.length > 0 && (
-              <div className="flex flex-col gap-y-2">
+              <div className="mr-12 ml-12 flex flex-col gap-y-2 mt-8 md:mt-0 md:ml-12">
                 <span className="txt-small-plus txt-ui-fg-base">
                   Коллекции
                 </span>
                 <ul
                   className={clx(
-                    "grid grid-cols-1 gap-2 text-ui-fg-subtle txt-small",
-                    {
-                      "grid-cols-2": (collections?.length || 0) > 3,
-                    }
+                    "grid gap-2 text-ui-fg-subtle txt-small",
                   )}
                 >
-                  {collections?.slice(0, 6).map((c) => (
-                    <li key={c.id}>
-                      <LocalizedClientLink
-                        className="hover:text-ui-fg-base"
-                        href={`/collections/${c.handle}`}
-                      >
-                        {c.title}
-                      </LocalizedClientLink>
-                    </li>
-                  ))}
+                  {collections
+                    .sort((a, b) => b.title.length - a.title.length)
+                    // .slice(0, 6)
+                    .map((c) => (
+                      <li key={c.id}>
+                        <LocalizedClientLink
+                          className="hover:text-ui-fg-base"
+                          href={`/collections/${c.handle}`}
+                        >
+                          {c.title}
+                        </LocalizedClientLink>
+                      </li>
+                    ))}
                 </ul>
               </div>
             )}
-            <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">Подпишитесь на нас</span>
-              <div className="grid grid-cols-1 gap-y-1.5 text-ui-fg-subtle txt-small">
-              <a
-                href="https://vk.me/flaurista"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-ui-fg-base flex items-center"
-              >
-                <table className="invisible-table">
-                <tbody>
-                  <tr>
-                  <td className="pr-2">
-                    <FontAwesomeIcon icon={faVk} className="text-lg" />
-                  </td>
-                  <td>
-                    <span>VK</span>
-                  </td>
-                  </tr>
-                </tbody>
-                </table>
-              </a>
-              <a
-                href="https://t.me/flaurista"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-ui-fg-base flex items-center"
-              >
-                <table className="invisible-table">
-                <tbody>
-                  <tr>
-                  <td className="pr-1.5">
-                    <FontAwesomeIcon icon={faTelegram} className="text-lg" />
-                  </td>
-                  <td>
-                    <span>Telegram</span>
-                  </td>
-                  </tr>
-                </tbody>
-                </table>
-              </a>
-              <a
-                href="https://www.instagram.com/flaurista_/"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-ui-fg-base flex items-center"
-              >
-                <table className="invisible-table">
-                <tbody>
-                  <tr>
-                  <td className="pr-2">
-                    <FontAwesomeIcon icon={faInstagram} className="text-lg" />
-                  </td>
-                  <td>
-                    <span>Instagram</span>
-                  </td>
-                  </tr>
-                </tbody>
-                </table>
-              </a>
-              <a
-                href="https://wa.me/79309455185"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-ui-fg-base flex items-center"
-              >
-                <table className="invisible-table">
-                <tbody>
-                  <tr>
-                  <td className="pr-2">
-                    <FontAwesomeIcon icon={faWhatsapp} className="text-lg" />
-                  </td>
-                  <td>
-                    <span>WhatsApp</span>
-                  </td>
-                  </tr>
-                </tbody>
-                </table>
-              </a>
-              </div>
-            </div>
           </div>
+
         </div>
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
           <Text className="txt-compact-small">
