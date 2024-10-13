@@ -20,10 +20,10 @@ export default function ProductRail({
 
   return (
     <div className="py-12 small:py-24">
-      <div className="sticky top-12 z-10 flex justify-between mb-8 px-2 small:px-0 bg-palm_green-100 bg-opacity-40 backdrop-blur-sm border-ui-border-base">
-        <Text className="ml-8 txt-xlarge">{collection.title}</Text>
+      <div className="sticky top-12 z-10 flex justify-between mb-8 px-2 small:px-0 bg-palm_green-100 text-ui-fg-subtle bg-opacity-40 backdrop-blur-sm">
+        <Text className="ml-8 txt-xlarge drop-shadow-sm">{collection.title}</Text>
         <InteractiveLink href={`/collections/${collection.handle}`}>
-          Все в категории
+          Все в коллекции
         </InteractiveLink>
       </div>
       <div className="overflow-x-auto no-scrollbar">
