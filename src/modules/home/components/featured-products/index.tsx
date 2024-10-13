@@ -1,7 +1,7 @@
 import { Region } from "@medusajs/medusa"
-
 import ProductRail from "@modules/home/components/featured-products/product-rail"
 import { ProductCollectionWithPreviews } from "types/global"
+import { Tabs } from "@medusajs/ui"
 
 export default async function FeaturedProducts({
   collections,
@@ -16,3 +16,5 @@ export default async function FeaturedProducts({
     </li>
   ))
 }
+
+// function to filter collections by type using horizonal tabs with collection names as tab names, and product rails as tab panels, no region
