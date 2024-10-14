@@ -52,6 +52,14 @@ const nextConfig = withStoreConfig({
       {
         protocol: "http",  
         hostname: "chauvinparis.com", 
+      }, 
+      {
+        protocol: "https",
+        hostname: "medusa-back.circle.institute",
+      },
+      {
+        protocol: "http",  
+        hostname: "medusa-back.circle.institute", 
       }
     ],
   },
